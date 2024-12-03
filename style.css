@@ -1,0 +1,124 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fullscreen body styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);  /* Gradient background */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;  /* Full viewport height */
+    width: 100vw;   /* Full viewport width */
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+/* Full screen container */
+.full-screen-container {
+    text-align: center;
+    max-width: 100%;
+    height: 100%;
+    width: 100%;
+    background-color: #0cd3e2; /* White with slight transparency */
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    overflow: hidden;
+}
+
+/* Header Styling */
+header h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+header h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #2C3E50;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+}
+
+/* Bio Section */
+.bio h3 {
+    font-size: 2rem;
+    color: #2980B9;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.bio p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+    margin-top: 10px;
+    font-weight: 300;
+}
+
+.bio a {
+    color: #2980B9;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.bio a:hover {
+    color: #16a085;  /* Change to a different color on hover */
+    text-decoration: underline;
+}
+
+/* Image Section */
+.image-section img {
+    max-width: 70%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    margin-top: 30px;
+    transition: transform 0.3s ease;
+}
+
+.image-section img:hover {
+    transform: scale(1.05);  /* Subtle zoom effect */
+}
+
+/* Responsive Design for smaller screens */
+@media screen and (max-width: 768px) {
+    body {
+        background: linear-gradient(135deg,#0cd3e2 , #0cd3e2);  /* Keep the gradient */
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    header h2 {
+        font-size: 2.5rem;
+    }
+
+    .bio h3 {
+        font-size: 1.5rem;
+    }
+
+    .bio p {
+        font-size: 1rem;
+    }
+
+    .image-section img {
+        max-width: 90%;
+    }
+}
